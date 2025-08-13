@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import WalletProvider from "@/wallet/provider";
-
 import "./globals.css";
 import ReduxProvider from "@/store";
 import { headers } from "next/headers";
+import { Inter } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin'], weight: ['400', '600', '700'] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +22,7 @@ export default async function RootLayout({
   const cookieHeader = headersList.get("cookie");
   return (
     <html lang="fa">
-      <body>
+      <body className={inter.className}>
         <ReduxProvider>
           <WalletProvider cookies={cookieHeader}>
             {children}
