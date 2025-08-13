@@ -52,7 +52,7 @@ export default function Home() {
       {/* Main content */}
       <main className="flex-1 p-6 overflow-auto">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-2xl font-semibold mb-4">Welcome to Chat Bot</h1>
+          <h1 className="text-2xl font-semibold mb-4 ml-10  mt-20">Welcome to Chat Bot</h1>
           {/* Add your chat interface here */}
         </div>
       </main>
